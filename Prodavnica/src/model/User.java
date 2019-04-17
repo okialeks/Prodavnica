@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 @Entity
 public class User {
 	
@@ -16,6 +17,7 @@ public class User {
 	private String username;
 	private String password;
 	private double balance;
+	@OneToMany
 	
 	private List<Product> listOfProducts = new ArrayList<Product>();
 
