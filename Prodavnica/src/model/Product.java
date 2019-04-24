@@ -1,6 +1,5 @@
 package model;
 
-import javax.annotation.Generated;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,7 +9,7 @@ import javax.persistence.Id;
 
 public class Product {
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int idProduct;
 	private String productName;
 	private double price;
